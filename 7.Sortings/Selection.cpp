@@ -2,23 +2,17 @@
 #include<iostream>
 using namespace std;
 
-void insertionSort(int n, vector<int> &arr){
-    
-    for(int i = 1; i<n; i++) {
-        int temp = arr[i];
-        int j = i-1;
-        for(; j>=0; j--) {
+void selectionSort(vector<int>& arr, int n)
+{   
+    for(int i = 0; i < n-1; i++ ) {
+        int minIndex = i;
+        
+        for(int j = i+1; j<n; j++) {
             
-            if(arr[j] > temp) {
-                //shift
-                arr[j+1] = arr[j];
-            }
-            else { // ruk jao
-                break;
-            }
+            if(arr[j] < arr[minIndex]) 
+                minIndex = j;
             
         }
-        //copy temp value
-        arr[j+1] = temp;  
-    } 
+        swap(arr[minIndex], arr[i]);
+    }
 }
