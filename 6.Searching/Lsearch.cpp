@@ -7,9 +7,7 @@ bool Lsearch(int arr[],int m,int key){
         if (arr[i]==key)
         {
             return 1;
-        }
-        
-        
+        }  
     }
     return 0;
 }
