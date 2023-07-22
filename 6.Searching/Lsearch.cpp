@@ -8,13 +8,10 @@ bool Lsearch(int arr[],int m,int key){
         {
             return 1;
         }
-        else{
-            return 0;
-            
-        }
+        
         
     }
-    
+    return 0;
 }
 
 int main(){
