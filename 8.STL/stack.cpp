@@ -17,8 +17,10 @@ int main(){
     s.pop();
     cout<<"Top Element "<<s.top()<<endl;
     
+    // to show size of stack
     cout<<"Size "<<s.size()<<endl;
- 
+    
+    // it tells about our storage of array is empty or not
     cout<<"Empty or not "<<s.empty()<<endl;
 
     return 0;
