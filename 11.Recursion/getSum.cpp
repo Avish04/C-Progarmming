@@ -20,9 +20,14 @@ int getSum(int arr[], int size){
 
 int main(){
     
-    int arr[10]={3,2,5,1,6};
+    int arr[5];
+    int n=5;
+    for (int i = 0; i < n; i++)
+    {
+        cin>>arr[i];
+    }
 
-    int sum = getSum(arr,10);
+    int sum = getSum(arr,5);
 
     cout<<"sum is "<<sum<<endl;
 

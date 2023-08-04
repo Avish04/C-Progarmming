@@ -2,6 +2,7 @@
 using namespace std;
 
 bool Lsearch(int arr[],int size,int k){
+    // base class
     if(size==0)
     return false;
     if(arr[0]==k)
@@ -16,8 +17,8 @@ bool Lsearch(int arr[],int size,int k){
 int main(){
     
     int arr[10]={3,5,1,2,6};
-    int k=4;
-    bool ans=Lsearch(arr,10,k);
+    int k;
+    bool ans=Lsearch(arr,10,4);
     if(ans){
         cout<<"Present"<<endl;
     }

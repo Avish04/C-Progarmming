@@ -20,9 +20,9 @@ bool Bsearch(int *arr,int s,int e,int k){
 int main(){
     
     int arr[10]={2,4,6,10,14,16};
-    int k=10;
+    int k;
 
-    cout<<"Present or not "<<Bsearch(arr,0,5,k)<<endl;
+    cout<<"Present or not "<<Bsearch(arr,0,5,10)<<endl;
 
 
 

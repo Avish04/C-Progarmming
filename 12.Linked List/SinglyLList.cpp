@@ -102,6 +102,7 @@ void deleteNode(int posi, node* &head){
     }
 }
 
+// Print a node
 void print(node* &head){
     node*temp=head;
 
@@ -127,7 +128,7 @@ int main(){
 
     // insert at start
     insertAtHead(head,5);
-    
+    print(head);
     // insert at end
     InsertAtTail(tail,15);
     
@@ -139,9 +140,7 @@ int main(){
 
     cout<<"head "<< head->data <<endl;
     cout<<"tail "<< tail->data <<endl;
-
-    deleteNode(4,head);
-    print(head);
+    // print(head);
 
     return 0;
 }
