@@ -1,14 +1,14 @@
 
 /* Inverted Triangle Pattern
 
-     * * * * * *  
-     * * * * *      
-     * * * *
-     * * *
-     * *
-     *                */
-
-
+ * * * * * *  
+ * * * * *      
+ * * * *
+ * * *
+ * *
+ *
+               
+*/
 
 #include<iostream>
 using namespace std;

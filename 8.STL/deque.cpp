@@ -15,13 +15,13 @@ int main(){
     }
     
     // to take off value
-    /*d.pop_front();
+    d.pop_front();
     cout<<endl;
     for (int i:d )
     {
         cout<<i<<" ";
     }
-    */
+    
     cout<<"Print first index element-> "<<d.at(1)<<endl;
 
     // shows first element 
@@ -33,10 +33,11 @@ int main(){
     // it tells about our storage of array is empty or not
     cout<<"empty or not :"<<d.empty()<<endl;
 
-    cout<<"before erase" <<d. size()<<endl;
+    cout<<"before erase " <<d. size()<<endl;
     // to erase values
     d.erase (d.begin(),d.begin()+1);
-    cout<<"after erase" <<d.size()<<endl;
+
+    cout<<"after erase " <<d.size()<<endl;
     for(int i:d) {
         cout<<i<<endl;
     }

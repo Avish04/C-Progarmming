@@ -1,7 +1,6 @@
 // Operators Precedence //
 
-/* Write a program to calculate digits,
-whitespaces and others character terminated by $ */
+/* Write a program to calculate digits,whitespaces and others character terminated by $ */
 
 #include<iostream>
 using namespace std;
@@ -36,13 +35,6 @@ int main(){
     cout<<"alphabets "<<alphabets<<endl;
     cout<<"spaces "<<spaces<<endl;
     cout<<"others "<<others<<endl;
-
-    
-        
-    
-    
-
-
 
 
     return 0;

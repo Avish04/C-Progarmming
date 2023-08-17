@@ -41,6 +41,7 @@ void InsertAtTail(node* &tail, int d){
 
 void InsertATmiddle(node* &tail,node* &head,int posi, int d){
     
+    // insert at Start
     if (posi==1)
     {
         insertAtHead(head,d);
@@ -86,7 +87,7 @@ void deleteNode(int posi, node* &head){
     else{
         // deletion any middle or last node
         node*curr=head;
-        node*prev=head;
+        node*prev=NULL;
 
         int cnt=1;
         while (cnt<posi)
@@ -116,7 +117,7 @@ void print(node* &head){
 
 int main(){
 
-    //  created new node
+    //  created new node object
     node* node1= new node(10);
     // cout<<node1->data<<endl;
     // cout<<node1->next<<endl;
@@ -131,16 +132,18 @@ int main(){
     print(head);
     // insert at end
     InsertAtTail(tail,15);
-    
     print(head);
  
     // insert at middle
     InsertATmiddle(tail,head,3,12);
     print(head);
 
-    cout<<"head "<< head->data <<endl;
-    cout<<"tail "<< tail->data <<endl;
+    // cout<<"head "<< head->data <<endl;
+    // cout<<"tail "<< tail->data <<endl;
     // print(head);
+
+    deleteNode(2,head);
+    print(head);
 
     return 0;
 }

@@ -13,6 +13,7 @@ class Node {
         this->next = NULL;
     }
 
+    // destructor
     ~Node() {
         int value = this->data;
         if(this->next != NULL) {
@@ -108,59 +109,64 @@ void deleteNode(Node* &tail, int value) {
 
 }
 
-bool isCircularList(Node* head) {
-    //empty list
-    if(head == NULL) {
+bool isCircularList(Node* tail){
+    
+    // empty list
+    if (tail == NULL)
+    {
         return true;
     }
 
-    Node* temp = head -> next;
-    while(temp != NULL && temp != head ) {
-        temp = temp -> next;
+    Node* temp = tail->next;
+    while (temp!=NULL && temp!=tail)
+    {
+        temp = temp->next;
     }
 
-    if(temp == head ) {
+    if (temp == tail)
+    {
         return true;
     }
 
     return false;
-
+    
+    
 }
 
-bool detectLoop(Node* head) {
+// bool detectLoop(Node* head) {
 
-    if(head == NULL)
-        return false;
+//     if(head == NULL)
+//         return false;
 
-    map<Node*, bool> visited;
+//     map<Node*, bool> visited;
 
-    Node* temp = head;
+//     Node* temp = head;
 
-    while(temp !=NULL) {
+//     while(temp !=NULL) {
 
-        //cycle is present
-        if(visited[temp] == true) {
-            return true;
-        }
+//         //cycle is present
+//         if(visited[temp] == true) {
+//             return true;
+//         }
 
-        visited[temp] = true;
-        temp = temp -> next;
+//         visited[temp] = true;
+//         temp = temp -> next;
 
-    }
-    return false;
+//     }
+//     return false;
 
-}
+// }
 
 
 int main() {
 
     Node* tail = NULL;
 
-   // insertNode(tail, 5, 3);
-    //print(tail);
+   insertNode(tail, 5, 3);
+    print(tail);
 
-  //  insertNode(tail, 3, 5);
-   // print(tail);
+   insertNode(tail, 3, 5);
+   print(tail);
 
 /*
     insertNode(tail, 5, 7);

@@ -12,6 +12,15 @@ class node{
         this ->data=data;
         this ->next=NULL;
     }
+
+    // destructor
+    ~node(){
+        int value=this->data;
+        if(this->next!=NULL){
+            delete next;
+            this->next=NULL;
+        }
+    }
 };
 
 void insertAtHead(node* &head,int d){
@@ -62,6 +71,15 @@ void insertAtPosition(node* &tail,node* &head,int posi,int d){
     position->next=temp->next;
     temp->next=position;
     
+}
+
+void deleteNode(int posi,node* &head){
+    // start node
+    id(posi==1){
+        node* temp=head;
+        head=head->next;
+        delete temp;
+    }
 }
 
 int main(){
