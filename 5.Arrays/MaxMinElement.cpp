@@ -1,3 +1,5 @@
+// Max and Min element in the array
+
 #include<iostream>
 using namespace std;
 
