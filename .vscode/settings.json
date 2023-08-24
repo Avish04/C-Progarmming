@@ -1,9 +1,10 @@
 {
-    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
         "iostream": "cpp",
         "cmath": "cpp",
         "random": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "type_traits": "cpp"
     }
 }
