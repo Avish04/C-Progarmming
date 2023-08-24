@@ -70,7 +70,7 @@ void insertatTail(struct Node* &head, struct Node* &tail, int val){
     }
 }
 
-Node* addTwoLists (Node* first, Node* second){
+Node* addTwoLists(Node* first, Node* second){
 
     first = reverse(first);
     second = reverse(second);
