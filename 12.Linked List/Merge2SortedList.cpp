@@ -1,17 +1,30 @@
 #include<iostream>
 using namespace std;
 
-Node<int>* solve(Node<int>* first, Node<int>* second){
+struct Node{
+	int data;
+	struct Node * next;
+	struct Node * bottom;
+	
+	Node(int x){
+	    data = x;
+	    next = NULL;
+	    bottom = NULL;
+	}
+	
+};
+
+Node* solve(Node* first, Node* second){
 
     if(first-> next == NULL){
         first-> next = second;
         return first;
     }
 
-    Node<int>* curr1 = first;
-    Node<int>* next1 = curr1-> next;
-    Node<int>* curr2 = second;
-    Node<int>* next2 = curr2-> next;
+    Node* curr1 = first;
+    Node* next1 = curr1-> next;
+    Node* curr2 = second;
+    Node* next2 = curr2-> next;
 
     while(next1!=NULL && curr2!=NULL){
 
@@ -37,7 +50,7 @@ Node<int>* solve(Node<int>* first, Node<int>* second){
 
 }
 
-Node<int>* sortTwoLists(Node<int>* first, Node<int>* second)
+Node* sortTwoLists(Node* first, Node* second)
 {
     
 

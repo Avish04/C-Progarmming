@@ -54,7 +54,7 @@ Node* add(Node* first, Node* second){
     return ansHead;
 }
 
-void insertatTail(struct Node* &head, struct Node* &tail, int val){
+void insertatTail(Node* &head,Node* &tail, int val){
     
     Node* temp = new Node(val);
     

@@ -15,21 +15,21 @@ class Node{
     }
 };
 
-void ReverseList(Node* &head){
+Node* ReverseList(Node* &head){
 
-    if (head == NULL || head ->next = NULL){
+    if (head ->next = NULL){
         return head;
     }
 
     Node* prev = NULL;
     Node* curr = head;
-    Node* forward = curr ->next;
+    Node* forward = curr->next;
 
     while (curr!=NULL)
     {
         forward = curr->next;
         curr->next = prev;
-        curr ->prev = forward;
+        curr->prev = forward;
         prev = curr;
         curr = forward;
     }

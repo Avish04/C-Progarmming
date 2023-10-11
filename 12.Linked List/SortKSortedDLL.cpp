@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include<vector>
 using namespace std;
 
 // a node of the doubly linked list

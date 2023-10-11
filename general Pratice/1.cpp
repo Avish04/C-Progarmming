@@ -75,7 +75,7 @@ void insertAtPosition(node* &tail,node* &head,int posi,int d){
 
 void deleteNode(int posi,node* &head){
     // start node
-    id(posi==1){
+    if(posi==1){
         node* temp=head;
         head=head->next;
         delete temp;

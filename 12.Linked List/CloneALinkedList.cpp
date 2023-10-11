@@ -20,7 +20,7 @@ class Solution
 {
     public:
     // using Map
-    /*Node* copyList(Node* head){
+    Node* copyList(Node* head){
 
     Node* temp = head;
 
@@ -59,7 +59,6 @@ class Solution
     return cloneHead;
     
 }
-*/
     
 
     // using changing linked list
